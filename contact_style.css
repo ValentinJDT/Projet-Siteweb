@@ -1,0 +1,9 @@
+iframe {
+    box-shadow: rgba(164, 164, 164, 0.57) 2px 0px 50px;
+}
+
+.links {
+    text-decoration: #474747;
+    font-weight: 500;
+    color: #646464;
+}

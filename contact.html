@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="global_style.css">
+    <link rel="stylesheet" href="contact_style.css">
+    <title>Attractiv' Web - Accueil</title>
+  </head>
+
+  <header class="sticky-top">
+    <nav class="navbar-expand-lg navbar-light bg-light navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="logo" src="imgs/logo.svg"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item first-element">
+              <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="solutions.html">Que faisons-nous ?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Qui sommes-nous ?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <body>
+    <div class="container">
+      <div class="main-title">
+        <h3 class="text-center">Comment nous contacter ?</h3>
+
+        <div class="mx-5 mt-5">
+          <form method="post">
+            <div class="row">
+              <div class="col">
+                <div class="mb-3">
+                  <label for="selectForm" class="form-label"><span class="text-danger">*</span>Catégorie :</label>
+                  <select required class="form-select" id="selectForm" aria-label="Selectionner une sujet">
+                    <option selected>Selectionner une catégorie...</option>
+                    <option value="1">Question(s)</option>
+                    <option value="2">Demande relative à un projet</option>
+                    <option value="3">Retour client</option>
+                    <option value="4">Recrutement</option>
+                    <option value="5">Autre</option>
+                  </select>
+                  <div class="mb-3 mt-2">
+                    <label for="objetForm" class="form-label"><span class="text-danger">*</span>Objet :</label>
+                    <input required type="text" class="form-control" id="objetForm" placeholder="Saisissez votre sujet ici...">
+                  </div>
+                  <div class="mb-3 mt-2">
+                    <label for="mailForm" class="form-label"><span class="text-danger">*</span>Adresse mail :</label>
+                    <input required type="email" class="form-control" id="mailForm" placeholder="nom@exemple.fr">
+                  </div>
+                </div>
+
+                <div class="form-check">
+                  <input required class="form-check-input" type="checkbox" value="" id="flexCheckFrom">
+                  <label class="form-check-label" for="flexCheckFrom">
+                    <span class="text-danger">*</span>J'ai lu et j'accepte les <a class="links" href="#">Conditions Générales d'Utilisation</a>.
+                  </label>
+                </div>
+
+                <button type="submit" class="btn btn-outline-primary mt-2">Envoyer</button>
+              </div>
+
+              <div class="col">
+                <div class="mb-3">
+                  <label for="messageForm" class="form-label"><span class="text-danger">*</span>Message :</label>
+                  <textarea required class="form-control" id="messageForm" rows="3"></textarea>
+                </div>
+                <div class="mb-3 mt-2">
+                  <label for="formFile" class="form-label">Ajouter un fichier (PDF uniquement) :</label>
+                  <input class="form-control" type="file" id="formFile" accept="application/pdf">
+                </div>
+              </div>
+
+              <div class="col ps-2">
+                <h5 class="sub-text text-center">Informations complémentaires</h5>
+
+                <div class="row mt-4">
+                  <div class="col">
+                    <h6 class="sub-text">Localisation :</h6>
+                    9 Rue Gambetta,<br>25000 Besançon<br><br>
+
+                    <h6 class="sub-text">Adresse mail :</h6>
+                    <a class="links" href="mailto:contact@attractiv-web.pro">contact@attractiv-web.pro</a><br><br>
+
+                    <h6 class="sub-text">Téléphone :</h6>
+                    <a class="links" href="tel:+33381548630">03.81.54.86.30</a><br>
+                  </div>
+
+
+                  <div class="col text-center">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2708.809516496437!2d6.022703415814761!3d47.23987172123191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478d633cfb844795%3A0x49d7cf6326baa997!2s9%20Rue%20Gambetta%2C%2025000%20Besan%C3%A7on!5e0!3m2!1sfr!2sfr!4v1620377780157!5m2!1sfr!2sfr" width="200" height="200" style="border:0;" allowfullscreen=""></iframe>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-basic">
+      <footer>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="index.html">Accueil</a></li>
+          <li class="list-inline-item"><a href="#">Nos Services</a></li>
+          <li class="list-inline-item"><a href="#">À propos</a></li>
+          <li class="list-inline-item"><a href="#">Termes et conditions</a></li>
+          <li class="list-inline-item"><a href="#">Politique de confidentialité</a></li>
+        </ul>
+
+        <p class="copyright"><img height="14" src="imgs/logo.svg"> ©</p>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  </body>
+</html>
